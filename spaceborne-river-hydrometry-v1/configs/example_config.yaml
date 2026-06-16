@@ -1,0 +1,20 @@
+connectivity:
+  soil_moisture_threshold: 0.24
+  maximum_gap_pixels: 30
+  minimum_component_pixels: 8
+width:
+  centerline_spacing_pixels: 10.0
+  transect_half_length_pixels: 45.0
+  tangent_window: 4
+  minimum_width_pixels: 2.0
+smcbam:
+  reference_width: 20.0
+  width_exponent: 0.55
+  reference_moisture: 0.20
+  moisture_exponent: 0.35
+  bankfull_width: 35.0
+  bankfull_depth: 2.8
+  shape_parameter: 1.5
+  slope: 0.0015
+  mannings_n: 0.035
+  bathymetry_exponent: 1.0

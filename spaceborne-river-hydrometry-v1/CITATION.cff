@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript when using this software."
+title: "Spaceborne River Hydrometry"
+type: software
+authors:
+  - family-names: Xing
+    given-names: Xuanwei
+repository-code: "https://github.com/xingxw23/spaceborne-river-hydrometry-v1"
+license: MIT
+version: 1.0.0-review
+date-released: 2026-06-16
