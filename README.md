@@ -451,13 +451,10 @@ plt.show()
 
 ---
 
-## 10. Nash–Sutcliffe efficiency
 
----
+## 10. Expected outputs
 
-## 11. Expected outputs
-
-Depending on the selected module, typical outputs may include:
+Depending on the selected module, typical outputs include:
 
 * binary river-surface masks;
 * probabilistic river-surface maps;
@@ -476,7 +473,7 @@ Large raster outputs, temporary files, and complete regional products are intent
 
 ---
 
-## 12. Reproducibility recommendations
+## 11. Reproducibility recommendations
 
 To improve reproducibility:
 
@@ -495,7 +492,7 @@ For the synthetic demonstration dataset, a fixed random seed is used during gene
 
 ---
 
-## 13. Data availability and restrictions
+## 12. Data availability and restrictions
 
 The complete study uses multi-source datasets obtained from different providers. Some datasets cannot be redistributed because of:
 
@@ -511,7 +508,7 @@ The repository does not transfer ownership or licensing rights for any third-par
 
 ---
 
-## 14. Limitations of the current release
+## 13. Limitations of the current release
 
 This repository is a research release rather than a turn-key operational system.
 
@@ -531,7 +528,7 @@ Users applying the framework to a new river system should conduct independent ca
 
 ---
 
-## 15. Study contributions
+## 14. Study contributions
 
 The manuscript demonstrates how satellite hydrometry can be extended from isolated river reaches to connected river networks.
 
@@ -549,7 +546,7 @@ The final numerical results should be cited from the published article because v
 
 ---
 
-## 16. Citation
+## 15. Citation
 
 The manuscript associated with this repository is currently under review.
 
