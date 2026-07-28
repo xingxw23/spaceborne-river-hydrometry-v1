@@ -1,7 +1,7 @@
 # Spaceborne River Network Hydrometry
 
 Core code, representative workflows, and demonstration data for reconstructing river-surface occurrence, river width, and discharge across intermittent river networks from multi-source satellite observations.
-The monthly runoff results for the coarse sand and sandy areas of the Loess Plateau in 2024 are presented in Zenodo (https://doi.org/10.5281/zenodo.21637375), for the use of editors and reviewers.
+The monthly runoff results for the high-sediment region of the Loess Plateau (HSRLP) in 2024 are presented in Zenodo (https://doi.org/10.5281/zenodo.21637375), for the use of editors and reviewers.
 
 > **Manuscript:** *Capturing Hidden Rivers with Spaceborne River Network Hydrometry: Discharge Retrieval in Intermittent Rivers*
 
