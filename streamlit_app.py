@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 import pandas as pd
 import plotly.express as px
@@ -19,6 +19,7 @@ DEFAULT_DATA_BASE_URL = "https://loess-plateau-hydrometry.xingxuanwei.chatgpt.si
 DATA_BASE_URL = os.environ.get("STREAMLIT_DATA_BASE_URL", "").strip().rstrip("/")
 if not DATA_BASE_URL and not DATA_DIR.exists():
     DATA_BASE_URL = DEFAULT_DATA_BASE_URL
+REMOTE_HEADERS = {"User-Agent": "Mozilla/5.0 Streamlit Hydrometry Explorer"}
 FLOW_STATES = ["dry", "intermittent", "connected", "high_flow"]
 CHUNK_SIZE = 100
 
@@ -74,7 +75,7 @@ def _read_remote_json(relative_path: str) -> Any:
     last_error: Exception | None = None
     for url in _remote_data_urls(relative_path):
         try:
-            with urlopen(url, timeout=60) as response:
+            with urlopen(Request(url, headers=REMOTE_HEADERS), timeout=60) as response:
                 return _decode_json_payload(response.read(), url, response.headers)
         except (HTTPError, URLError, TimeoutError, json.JSONDecodeError, OSError) as exc:
             last_error = exc
