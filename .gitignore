@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
+.venv/
+venv/
+streamlit_stdout.log
+streamlit_stderr.log
+streamlit_local.pid
